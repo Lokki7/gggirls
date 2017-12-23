@@ -1,0 +1,15 @@
+<a class="stream-block" [routerLink]="'/' + stream.channelkey">
+
+  <div class="preview" [style.background-image]="'url(' + stream.poster + ')'"></div>
+  <div class="preview" *ngIf="stream.preview" [style.background-image]="'url(' + stream.preview + ')'"></div>
+
+  <div class="description">
+    <div class="title">{{ stream.title }}</div>
+    <div class="streamer">{{ stream.streamer }}</div>
+
+    <div class="viewers" *ngIf="stream.status">{{ stream.viewers }}</div>
+    <div class="offline" *ngIf="!stream.status">офлайн</div>
+
+  </div>
+
+</a>

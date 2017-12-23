@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=cyrillic');
+
+@font-face {
+  font-family: 'icons';
+  src: url('/assets/fonts/IcoMoon-Free.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f7dddd;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+html, body {
+  height: 100%;
+}

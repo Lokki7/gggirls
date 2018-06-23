@@ -15,7 +15,7 @@ export class ChatComponent implements OnInit, OnChanges {
 
   ngOnChanges() {
     if (this.stream) {
-      this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://goodgame.ru/chat/' + this.stream.channelKey);
+      this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://goodgame.ru/chat/' + this.stream.channelkey);
     }
   }
 
